@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  background: #ddd;
+}
+form {
+  position: absolute;
+  left: -5000px;
+}
+.d-i-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.iten-don {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 100%;
+  border: 1px solid;
+}
+.iten-don:first-of-type {
+  opacity: 0.5;
+}
+.iten-don:nth-of-type(2) {
+  opacity: 0.75;
+}
+#i::-webkit-input-placeholder {
+  /* Edge */
+  color: #ccc;
+}
+
+#i:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ccc;
+}
+
+#i::placeholder {
+  color: #ccc;
+}
+.wrap {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #eee;
+  min-height: calc(100vh - 59px);
+}
+.donnate {
+  padding: 0 30px;
+  font-size: 0.9em;
+}
+.donnate a {
+  color: #1ebea5;
+  text-decoration: none;
+}
+.donnate > div {
+  padding: 20px;
+}
+.d-text {
+  margin-bottom: 20px;
+}
+.donnate .img svg {
+  height: 40px;
+  margin-right: 20px;
+}
+h1 {
+  margin: 0;
+  padding: 30px;
+}
+.main-field {
+  padding: 30px;
+  background-color: #fff;
+}
+.option {
+  text-align: left;
+  clear: both;
+}
+.option input {
+  width: initial;
+  margin-top: 15px;
+}
+.bott {
+  display: block;
+  width: calc(30% - 5px);
+  box-sizing: border-box;
+  float: left;
+  line-height: 46px;
+  margin-left: 5px;
+  border: 1px solid #0088cc;
+  background-color: #0088cc;
+  color: #fff;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+input {
+  font-size: inherit;
+}
+.txt {
+  padding: 30px;
+  clear: both;
+  text-align: left;
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+.type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 20px 0 0;
+}
+.type--link {
+  margin-left: 20px;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.type--link a {
+  color: inherit;
+}
+.kaani {
+  background-color: #0088cc;
+  padding: 20px 15px;
+  color: #fff;
+  font-size: 14px;
+}
+.kaani a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.inp {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  border: 1px solid #0088cc;
+  width: 70%;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 0 10px 10px;
+  height: 52px;
+  border-radius: 15px;
+}
+.inp span {
+  margin-top: -6px;
+}
+input {
+  -webkit-appearance: caret;
+  -moz-appearance: caret;
+  appearance: caret;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0 solid rgba(255, 255, 255, 0) !important;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  width: 80%;
+  padding: 0;
+}
+input::-moz-focus-outer,
+input::-moz-focus-inner {
+  border: 0 !important;
+  padding: 0;
+}
+
+.warn {
+  background-color: #fff;
+  border-top: 2px solid red;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.warn.active .warn-a {
+  max-height: 600px;
+}
+
+.warn-a {
+  max-height: 0;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+.warn-a > div {
+  padding-top: 30px;
+  text-align: left;
+}
+.a__ {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  max-width: calc((100vw - 560px) / 2);
+}
+.p__bl {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: calc((100vw - 560px) / 2);
+  max-width: 400px;
+  background-color: #838383;
+  overflow: hidden;
+  background-image: url("../images/bb.jpg");
+  background-position: center;
+  background-size: contain;
+}
+.p__bl:before {
+  content: "";
+  padding-top: 50%;
+  float: left;
+}
+.p__bl2 {
+  background-color: #838383;
+  overflow: hidden;
+  display: none;
+  background-image: url("../images/bb.jpg");
+  background-position: center;
+  background-size: contain;
+}
+.p__bl2:before {
+  content: "";
+  padding-top: 50%;
+  float: left;
+}
+
+@media only screen and (max-width: 1198.98px) {
+  .p__bl {
+    display: none;
+  }
+  .p__bl2 {
+    display: block;
+  }
+  .a__ {
+    position: static;
+    max-width: initial;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/*#1ebea5
+#01E675*/
